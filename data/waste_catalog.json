@@ -76,8 +76,8 @@
     },
     {
       "id": "cup",
-      "en": "Cup (paper / plastic)",
-      "th": "แก้วน้ำ (กระดาษหรือพลาสติก)",
+      "en": "Cup ",
+      "th": "แก้วน้ำ",
       "ja": "コップ（紙・プラスチック）",
       "material": "Mixed",
       "category": "review",
@@ -130,9 +130,9 @@
       "details_en": "Confirm whether the cup is paper, soft plastic or rigid plastic. The collection category depends on the material."
     },
     {
-      "id": "plastic_straw",
-      "en": "Plastic Straw",
-      "th": "หลอดดูดพลาสติก",
+      "id": "Straw",
+      "en": "Straw",
+      "th": "หลอดดูด",
       "ja": "プラスチックストロー",
       "material": "Plastic",
       "category": "burnable",
@@ -147,9 +147,9 @@
       "details_en": "Check the material and whether it is soft or rigid plastic. Verify the local disposal category."
     },
     {
-      "id": "plastic_cutlery",
-      "en": "Plastic Cutlery",
-      "th": "ช้อนส้อมพลาสติก",
+      "id": "Cutlery",
+      "en": "Cutlery",
+      "th": "ช้อนส้อม",
       "ja": "プラスチック製スプーン・フォーク",
       "material": "Plastic",
       "category": "review",
@@ -241,8 +241,8 @@
     },
     {
       "id": "foam_waste",
-      "en": "Foam Waste (Box / Cup)",
-      "th": "โฟม (กล่องหรือแก้ว)",
+      "en": "Foam Waste",
+      "th": "โฟม",
       "ja": "発泡スチロール（容器など）",
       "material": "Plastic",
       "category": "review",
