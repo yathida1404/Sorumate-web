@@ -43,7 +43,7 @@ LABELS = {
 
 @app.get('/')
 def index():
-    return FileResponse(BASE / 'static' / 'index.html', headers={'Cache-Control': 'no-cache'})
+    return FileResponse(BASE / 'static' / 'sorumate.html', headers={'Cache-Control': 'no-cache'})
 
 @app.get('/health')
 def health():
