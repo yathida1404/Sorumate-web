@@ -1,0 +1,200 @@
+{
+  "version": "2026-11-06",
+  "notice": "Additional researched guide items, NOT YOLO model classes.",
+  "items": [
+    {
+      "id": "extra_tissue",
+      "en": "Used tissue paper",
+      "th": "กระดาษทิชชูใช้แล้ว",
+      "ja": "使用済みティッシュペーパー",
+      "aliases": [
+        "ทิชชู",
+        "ทิชชู่",
+        "กระดาษทิชชู่",
+        "tissue",
+        "tissue paper",
+        "ティッシュ"
+      ],
+      "material": "Paper",
+      "category": "burnable",
+      "status": "validated",
+      "details_th": "ทิชชูใช้แล้วจัดเป็นขยะเผาได้ ใส่ถุงขยะที่เมืองกำหนด",
+      "details_ja": "使用済みのティッシュペーパーは燃やせるごみ。市の指定ごみ袋に入れてください。",
+      "details_en": "Used tissue paper is burnable waste. Use a city-designated waste bag.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf"
+    },
+    {
+      "id": "extra_clothing",
+      "en": "Old clothes / towels",
+      "th": "เสื้อผ้าเก่าหรือผ้าขนหนู",
+      "ja": "古い衣類・タオル",
+      "aliases": [
+        "เสื้อผ้า",
+        "ผ้าขนหนู",
+        "เสื้อเก่า",
+        "old clothing",
+        "clothes",
+        "towel",
+        "衣類",
+        "タオル"
+      ],
+      "material": "Mixed",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "เสื้อผ้าและผ้าขนหนูทั่วไปจัดเป็นขยะเผาได้หากไม่สามารถนำกลับมาใช้หรือส่งรีไซเคิลได้ วัสดุหนังแท้อาจต่างออกไป",
+      "details_ja": "再使用・回収に出せない一般的な衣類・タオルは燃やせるごみ。革製品などは区分が異なる場合があります。",
+      "details_en": "Ordinary clothes and towels that cannot be reused or donated are generally burnable waste. Leather may have different rules.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf"
+    },
+    {
+      "id": "extra_food_scraps",
+      "en": "Food scraps",
+      "th": "เศษอาหาร",
+      "ja": "生ごみ",
+      "aliases": [
+        "เศษอาหาร",
+        "อาหารเหลือ",
+        "food waste",
+        "leftover food",
+        "残飯",
+        "生ごみ"
+      ],
+      "material": "Mixed",
+      "category": "burnable",
+      "status": "validated",
+      "details_th": "เศษอาหารเป็นขยะเผาได้ ควรสะเด็ดน้ำก่อนใส่ถุงขยะที่เมืองกำหนด",
+      "details_ja": "生ごみは燃やせるごみ。水分を十分に切ってから指定ごみ袋へ。",
+      "details_en": "Food scraps are burnable waste. Drain liquids thoroughly before using a city-designated bag.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf"
+    },
+    {
+      "id": "extra_plastic_wrap",
+      "en": "Plastic cling film / wrap",
+      "th": "พลาสติกแรปอาหาร",
+      "ja": "食品用ラップ",
+      "aliases": [
+        "แรป",
+        "แรปอาหาร",
+        "ฟิล์มห่ออาหาร",
+        "cling film",
+        "plastic wrap",
+        "food wrap",
+        "ラップ"
+      ],
+      "material": "Plastic",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "ฟิล์มห่ออาหารพลาสติกชนิดอ่อนตามคู่มือเมืองอยู่ในขยะเผาได้ หากเป็นวัสดุอื่นหรือมีชั้นโลหะต้องตรวจสอบเพิ่ม",
+      "details_ja": "軟らかい食品用ラップは燃やせるごみ。別素材・金属層のあるものは確認してください。",
+      "details_en": "Soft plastic food wrap is classed as burnable waste. Confirm separately for composite or metallic films.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf"
+    },
+    {
+      "id": "extra_plastic_bag",
+      "en": "Soft plastic shopping bag",
+      "th": "ถุงพลาสติกอ่อน",
+      "ja": "ビニール袋・ポリ袋",
+      "aliases": [
+        "ถุงพลาสติก",
+        "ถุงหูหิ้ว",
+        "ถุงก๊อบแก๊บ",
+        "plastic bag",
+        "shopping bag",
+        "ポリ袋",
+        "ビニール袋"
+      ],
+      "material": "Plastic",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "ถุงพลาสติกอ่อนทั่วไปอยู่ในกลุ่มขยะเผาได้ของเมืองเอเบ็ตสึ หากเป็นวัสดุแข็งหรือวัสดุผสมต้องตรวจสอบเพิ่ม",
+      "details_ja": "一般的な軟質ポリ袋・ビニール袋は燃やせるごみ。硬質・複合材は要確認。",
+      "details_en": "Ordinary soft plastic shopping bags are generally burnable under Ebetsu rules. Verify rigid or mixed-material bags.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf"
+    },
+    {
+      "id": "extra_broken_dish",
+      "en": "Broken plate / ceramic dish",
+      "th": "จานหรือถ้วยเซรามิกแตก",
+      "ja": "割れた皿・陶器",
+      "aliases": [
+        "จานแตก",
+        "ถ้วยแตก",
+        "จานเซรามิก",
+        "broken dishes",
+        "broken plate",
+        "ceramic plate",
+        "割れた食器",
+        "陶器"
+      ],
+      "material": "Glass",
+      "category": "nonburnable",
+      "status": "validated",
+      "details_th": "จานหรือถ้วยเซรามิกแตกเป็นขยะเผาไม่ได้ ห่อด้วยกระดาษหรือผ้าให้ปลอดภัยก่อนใส่ถุงที่เมืองกำหนด ไม่ใช่ขยะอันตราย",
+      "details_ja": "割れた陶器や食器は燃やせないごみ。新聞紙や布で安全に包んで指定ごみ袋に入れてください。危険ごみではありません。",
+      "details_en": "Broken ceramic tableware is non-burnable waste. Wrap sharp pieces in paper or cloth before using the designated bag; it is not the hazardous-waste category.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/faq/faq5860.html"
+    },
+    {
+      "id": "extra_diaper",
+      "en": "Disposable diaper",
+      "th": "ผ้าอ้อมใช้แล้ว",
+      "ja": "使用済み紙おむつ",
+      "aliases": [
+        "ผ้าอ้อม",
+        "แพมเพิส",
+        "diaper",
+        "nappy",
+        "紙おむつ",
+        "おむつ"
+      ],
+      "material": "Mixed",
+      "category": "burnable",
+      "status": "validated",
+      "details_th": "ผ้าอ้อมใช้แล้วทิ้งในวันขยะเผาได้ โดยนำสิ่งสกปรกออกก่อน สามารถใส่ถุงใส/กึ่งใสสำหรับการเก็บฟรีตามเงื่อนไขเมืองได้ (ไม่รวมผ้าอนามัย)",
+      "details_ja": "紙おむつは汚物を除き、燃やせるごみの日に透明または半透明の袋で出すと無料収集の対象です（生理用品は対象外）。",
+      "details_en": "Disposable diapers go out on the burnable-waste collection day. Remove waste first. Eligible diapers may be collected free in a clear/translucent bag, unlike sanitary products.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/70412.pdf"
+    },
+    {
+      "id": "extra_sanitary_pad",
+      "en": "Sanitary pad",
+      "th": "ผ้าอนามัย",
+      "ja": "生理用品",
+      "aliases": [
+        "ผ้าอนามัย",
+        "sanitary napkin",
+        "period pad",
+        "生理用品",
+        "ナプキン"
+      ],
+      "material": "Mixed",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "ผ้าอนามัยไม่อยู่ในรายการผ้าอ้อมที่เมืองเก็บฟรี ต้องใส่ถุงขยะทั่วไปตามกฎขยะเผาได้ของเมือง ไม่ใส่ถุงเก็บผ้าอ้อมฟรี",
+      "details_ja": "生理用品は紙おむつ等の無料収集の対象外です。通常の燃やせるごみとして市指定ごみ袋で出してください。",
+      "details_en": "Sanitary pads are not eligible for the city’s free diaper collection. Use the regular designated burnable-waste bag, not the free diaper bag.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/70412.pdf"
+    },
+    {
+      "id": "extra_rechargeable_battery",
+      "en": "Rechargeable battery (small)",
+      "th": "แบตเตอรี่ชาร์จซ้ำขนาดเล็ก",
+      "ja": "小型充電式電池",
+      "aliases": [
+        "ถ่านชาร์จ",
+        "แบตชาร์จ",
+        "lithium battery",
+        "rechargeable battery",
+        "リチウムイオン電池",
+        "充電式電池"
+      ],
+      "material": "Hazardous",
+      "category": "hazardous",
+      "status": "conditional",
+      "details_th": "แบตเตอรี่ชาร์จซ้ำขนาดเล็กจัดเป็นขยะอันตราย ห้ามทิ้งรวมขยะทั่วไป แยกแบตเตอรี่ออกจากเครื่องหากทำได้อย่างปลอดภัย และตรวจวิธีป้องกันขั้ว/การเก็บตามกฎเมือง",
+      "details_ja": "小型充電式電池は危険ごみです。一般ごみに混ぜず、取り外せる場合は安全に外して、市の指示に従ってください。",
+      "details_en": "Small rechargeable batteries are hazardous waste. Do not mix with regular trash; remove safely where possible and follow the city’s handling instructions.",
+      "source": "https://www.city.ebetsu.hokkaido.jp/soshiki/seiso-haikibutsu/69864.html"
+    }
+  ]
+}
