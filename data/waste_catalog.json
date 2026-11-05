@@ -1,0 +1,823 @@
+{
+  "version": "2026-11-06 model classes verified from Roboflow screenshots",
+  "verified_model_classes": true,
+  "model_mapping_notice_th": "รายชื่อ 25 คลาสนี้ตรวจเทียบจากภาพหน้า Roboflow ที่ผู้ใช้ส่งมาแล้ว แต่ยังไม่ยืนยันการเชื่อมโมเดลตรวจจับจริงกับ Render; แก้วกระดาษและแก้วพลาสติกเป็น 2 คลาสของโมเดล แต่สามารถนำเสนอเป็นกลุ่มแก้วในคู่มือได้",
+  "sources": [
+    "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+    "https://www.city.ebetsu.hokkaido.jp/site/gomi/2021.html"
+  ],
+  "category_names": {
+    "pet": {
+      "th": "ขวด PET ที่เข้าเงื่อนไขเก็บรีไซเคิล",
+      "ja": "資源物（ペットボトル）",
+      "en": "PET bottle recyclables"
+    },
+    "recyclables": {
+      "th": "ขยะรีไซเคิลตามรายการรับของเมือง",
+      "ja": "資源物（対象品目）",
+      "en": "Recyclables (eligible items)"
+    },
+    "burnable": {
+      "th": "ขยะเผาได้ (ต้องตรวจชนิดวัสดุ)",
+      "ja": "燃やせるごみ（材質を確認）",
+      "en": "Burnable waste (verify material)"
+    },
+    "nonburnable": {
+      "th": "ขยะเผาไม่ได้",
+      "ja": "燃やせないごみ",
+      "en": "Non-burnable waste"
+    },
+    "hazardous": {
+      "th": "ขยะอันตราย",
+      "ja": "危険ごみ",
+      "en": "Hazardous waste"
+    },
+    "review": {
+      "th": "ยังไม่ระบุถัง ต้องตรวจสอบวัสดุ/สภาพ",
+      "ja": "分別は要確認",
+      "en": "Check material / condition first"
+    }
+  },
+  "items": [
+    {
+      "id": "battery",
+      "en": "Battery",
+      "th": "ถ่านไฟฉาย / แบตเตอรี่",
+      "ja": "電池",
+      "material": "Battery",
+      "category": "hazardous",
+      "status": "validated",
+      "details_th": "ถ่านไฟฉายและแบตเตอรี่ชาร์จเป็นขยะอันตราย และควรตรวจคำแนะนำเรื่องขั้ว/บรรจุภัณฑ์",
+      "details_ja": "乾電池・充電池は危険ごみ。端子・包装の指示を確認。",
+      "aliases": [
+        "dry battery",
+        "rechargeable battery",
+        "ถ่าน",
+        "แบตเตอรี่",
+        "Battery",
+        "ถ่านไฟฉายหรือแบตเตอรี่",
+        "乾電池・充電池",
+        "battery"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Batteries are hazardous waste. Follow city instructions for contacts, terminals and drop-off.",
+      "model_class": "Battery"
+    },
+    {
+      "id": "aluminum_can",
+      "en": "Beverage Can",
+      "th": "กระป๋องเครื่องดื่ม",
+      "ja": "飲料缶",
+      "material": "Metal",
+      "category": "recyclables",
+      "status": "conditional",
+      "details_th": "ตรวจว่าเป็นกระป๋องเครื่องดื่มโลหะ (เหล็กหรืออะลูมิเนียม) เทสิ่งที่เหลือออก ล้าง และตรวจว่าเข้าประเภทกระป๋องรีไซเคิลของเมืองหรือไม่ กระป๋องสเปรย์ไม่ใช่ประเภทนี้",
+      "details_ja": "スチール・アルミ製の飲料缶か確認。中身を空にしてすすぎ、市の資源物の対象か確認してください。スプレー缶は別です。",
+      "aliases": [
+        "aluminium can",
+        "drink can",
+        "กระป๋องน้ำ",
+        "Aluminum Can",
+        "กระป๋องอะลูมิเนียม",
+        "アルミ缶",
+        "aluminum can",
+        "beverage can",
+        "กระป๋องเครื่องดื่ม"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Confirm this is a metal beverage can (steel or aluminum). Empty and rinse it, and check eligibility for the city can collection. Aerosol cans are separate.",
+      "model_class": "Beverage Can"
+    },
+    {
+      "id": "beverage_carton",
+      "en": "Beverage Carton",
+      "th": "กล่องเครื่องดื่ม",
+      "ja": "飲料用紙パック",
+      "material": "Paper",
+      "category": "recyclables",
+      "status": "conditional",
+      "details_th": "เฉพาะกล่องกระดาษที่เข้าเงื่อนไขรีไซเคิลของเมือง ต้องเทออก ล้าง และตรวจวัสดุเคลือบ",
+      "details_ja": "対象となる紙パックか確認し、中身を空にしてすすぐ。",
+      "aliases": [
+        "milk carton",
+        "juice carton",
+        "paper carton",
+        "กล่องนม",
+        "กล่องน้ำผลไม้",
+        "Beverage Carton",
+        "กล่องนมหรือเครื่องดื่ม",
+        "紙パック",
+        "beverage carton"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Check whether the carton meets the city recycling criteria, and empty and rinse before disposal.",
+      "model_class": "Beverage Carton"
+    },
+    {
+      "id": "can_lid",
+      "en": "Can Lid",
+      "th": "ฝากระป๋อง",
+      "ja": "缶のふた",
+      "material": "Metal",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "ฝากระป๋องที่ยังติดกับกระป๋องและฝาโลหะที่แยกแล้วอาจมีข้อแนะนำต่างกัน",
+      "details_ja": "本体についたふたと取り外した金属ふたを区別。",
+      "aliases": [
+        "pull tab",
+        "metal lid",
+        "ฝากระป๋อง",
+        "Can Lid",
+        "缶のふた",
+        "can lid"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Check whether the metal lid remains attached to its can or has been removed, and whether it is clean.",
+      "model_class": "Can Lid"
+    },
+    {
+      "id": "cardboard_box",
+      "en": "Cardboard Box",
+      "th": "กล่องกระดาษลูกฟูก",
+      "ja": "段ボール箱",
+      "material": "Paper",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "กระดาษลูกฟูกมีทางเลือกการเก็บรีไซเคิลหรือมัดเป็นชุดตามขนาด/ค่าธรรมเนียม ตรวจระบบหอและเขต",
+      "details_ja": "段ボールは資源回収や束での排出方法・大きさを確認。",
+      "aliases": [
+        "cardboard",
+        "box",
+        "กล่องลัง",
+        "ลัง",
+        "Cardboard Box",
+        "กล่องกระดาษลูกฟูก",
+        "段ボール箱",
+        "cardboard box"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Cardboard may have a separate paper-recovery route. Confirm bundling, size and collection-point rules.",
+      "model_class": "Cardboard Box"
+    },
+    {
+      "id": "plastic_cutlery",
+      "en": "Cutlery",
+      "th": "ช้อนหรือส้อม",
+      "ja": "スプーン・フォーク",
+      "material": "Mixed",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "โมเดลตรวจพบช้อนหรือส้อมจากรูปทรง แต่ยังยืนยันวัสดุไม่ได้ ต้องตรวจว่าเป็นพลาสติก โลหะ หรือไม้ก่อนเลือกวิธีทิ้ง",
+      "details_ja": "形状だけではプラスチック・金属・木製を判別できません。素材を確認してください。",
+      "aliases": [
+        "spoon",
+        "fork",
+        "cutlery",
+        "ช้อน",
+        "ส้อม",
+        "Plastic Cutlery",
+        "ช้อนส้อมพลาสติก",
+        "プラスチック製スプーン・フォーク",
+        "plastic cutlery",
+        "ช้อนส้อม"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "The model identifies cutlery by shape, not necessarily its material. Confirm plastic, metal or wood before disposal.",
+      "model_class": "Cutlery"
+    },
+    {
+      "id": "egg_carton",
+      "en": "Egg Carton",
+      "th": "แผงไข่",
+      "ja": "卵パック",
+      "material": "Mixed",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "แผงไข่อาจทำจากกระดาษหรือพลาสติก โปรดตรวจวัสดุและคู่มือก่อนทิ้ง ไม่ควรถือว่าเป็นแผงกระดาษทุกภาพ",
+      "details_ja": "卵パックは紙製とプラスチック製があります。素材を確認してください。",
+      "aliases": [
+        "egg tray",
+        "แผงไข่",
+        "Egg Carton",
+        "แผงไข่กระดาษ",
+        "紙製卵パック",
+        "egg carton"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Egg cartons can be paper or plastic. Confirm the material before choosing a disposal category.",
+      "model_class": "Egg Carton"
+    },
+    {
+      "id": "foam_waste",
+      "en": "Foam Food Container",
+      "th": "ภาชนะอาหารโฟม",
+      "ja": "発泡スチロール食品容器",
+      "material": "Plastic",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "โฟมขนาดใหญ่/ถาดอาหารสีขาว/ภาชนะโฟมอาจใช้วิธีทิ้งต่างกัน ตรวจประเภทและขนาด",
+      "details_ja": "白色食品トレイと一般の発泡スチロール・大きさで分別が変わる。",
+      "aliases": [
+        "foam",
+        "styrofoam",
+        "foam container",
+        "ถาดโฟม",
+        "กล่องโฟม",
+        "Foam Waste (Box / Cup)",
+        "โฟม (กล่องหรือแก้ว)",
+        "発泡スチロール（容器など）",
+        "foam waste",
+        "styrofoam food container"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Distinguish white food trays from other expanded polystyrene and large foam pieces. Size and use may change disposal.",
+      "model_class": "Foam Food Container"
+    },
+    {
+      "id": "food_can",
+      "en": "Food Can",
+      "th": "กระป๋องอาหาร",
+      "ja": "食品缶",
+      "material": "Metal",
+      "category": "recyclables",
+      "status": "conditional",
+      "details_th": "กระป๋องอาหารที่ล้างสะอาดเข้าสายเก็บกระป๋อง แต่หากมีน้ำมันตกค้างให้ตรวจสภาพ",
+      "details_ja": "食品用で中身を空にし、すすいだ缶。油汚れの残留に注意。",
+      "aliases": [
+        "tin can",
+        "canned food",
+        "กระป๋องอาหาร",
+        "Food Can",
+        "食品缶",
+        "food can"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Food cans that have been emptied and rinsed can be eligible recyclables. Oil residue may require different handling.",
+      "model_class": "Food Can"
+    },
+    {
+      "id": "glass_bottle",
+      "en": "Glass Beverage Bottle",
+      "th": "ขวดแก้วเครื่องดื่ม",
+      "ja": "飲料用ガラスびん",
+      "material": "Glass",
+      "category": "recyclables",
+      "status": "conditional",
+      "details_th": "ขวดเครื่องดื่ม/อาหารที่ไม่แตกและล้างสะอาดเข้า資源物 ส่วนขวดแตกต้องแยกเป็นขยะเผาไม่ได้",
+      "details_ja": "飲食用の割れていないびんは資源物。割れたびんは燃やせないごみ。",
+      "aliases": [
+        "glass jar",
+        "ขวดแก้วแตก",
+        "bottle glass",
+        "Glass Bottle",
+        "ขวดแก้ว",
+        "ガラスびん",
+        "glass bottle",
+        "ขวดแก้วเครื่องดื่ม"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "questions": [
+        {
+          "id": "state",
+          "label_th": "สภาพขวดเป็นอย่างไร?",
+          "label_ja": "びんの状態は？",
+          "label_en": "Condition of bottle?",
+          "options": [
+            {
+              "id": "intact",
+              "th": "ไม่แตก / ขวดอาหารหรือเครื่องดื่ม",
+              "ja": "割れていない飲食用びん",
+              "en": "Intact food/drink bottle"
+            },
+            {
+              "id": "broken",
+              "th": "แตก",
+              "ja": "割れている",
+              "en": "Broken"
+            },
+            {
+              "id": "unsure",
+              "th": "ไม่แน่ใจ",
+              "ja": "不明",
+              "en": "Not sure"
+            }
+          ]
+        }
+      ],
+      "details_en": "Unbroken food and drink glass bottles may be recyclables when clean. Broken glass needs separate handling.",
+      "model_class": "Glass Beverage Bottle"
+    },
+    {
+      "id": "kraft_paper_envelope",
+      "en": "Kraft Paper Envelope",
+      "th": "ซองเอกสารกระดาษคราฟต์",
+      "ja": "クラフト封筒",
+      "material": "Paper",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "ซองกระดาษธรรมดาเป็นขยะกระดาษ ต้องแยกชิ้นส่วนพลาสติก/โลหะก่อน",
+      "details_ja": "紙製封筒は紙類。金属・プラスチック部品は外す。",
+      "aliases": [
+        "kraft envelope",
+        "document envelope",
+        "ซองสีน้ำตาล",
+        "ซองเอกสาร",
+        "Kraft Paper Envelope (A4)",
+        "ซองเอกสารคราฟต์ A4",
+        "クラフト封筒（A4）",
+        "kraft paper envelope",
+        "kraft paper envelope a4",
+        "ซองเอกสาร a4",
+        "ซองคราฟต์"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Check if the envelope is ordinary paper. Remove plastic windows or metal parts when instructed.",
+      "model_class": "Kraft Paper Envelope"
+    },
+    {
+      "id": "light_bulb",
+      "en": "Light Bulb",
+      "th": "หลอดไฟ",
+      "ja": "電球",
+      "material": "Mixed",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "หลอดไส้/LED เป็นขยะเผาไม่ได้ แต่หลอดฟลูออเรสเซนต์เป็นขยะอันตราย ให้ผู้ใช้ยืนยันชนิด",
+      "details_ja": "白熱球・LED電球は燃やせないごみ、蛍光管は危険ごみ。種類を確認。",
+      "aliases": [
+        "lamp",
+        "led bulb",
+        "fluorescent",
+        "หลอดไฟ LED",
+        "หลอดฟลูออเรสเซนต์",
+        "Light Bulb",
+        "หลอดไฟ",
+        "電球・蛍光管",
+        "light bulb"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "questions": [
+        {
+          "id": "bulb_type",
+          "label_th": "หลอดไฟชนิดไหน?",
+          "label_ja": "電球の種類は？",
+          "label_en": "Bulb type?",
+          "options": [
+            {
+              "id": "led",
+              "th": "LED/หลอดไส้",
+              "ja": "LED・白熱球",
+              "en": "LED/incandescent"
+            },
+            {
+              "id": "fluorescent",
+              "th": "ฟลูออเรสเซนต์",
+              "ja": "蛍光管",
+              "en": "Fluorescent"
+            },
+            {
+              "id": "unsure",
+              "th": "ไม่แน่ใจ",
+              "ja": "不明",
+              "en": "Not sure"
+            }
+          ]
+        }
+      ],
+      "details_en": "Confirm the lamp type. LED and incandescent lamps differ from fluorescent tubes.",
+      "model_class": "Light Bulb"
+    },
+    {
+      "id": "lighter",
+      "en": "Lighter",
+      "th": "ไฟแช็ก",
+      "ja": "ライター",
+      "material": "Hazardous",
+      "category": "hazardous",
+      "status": "validated",
+      "details_th": "ไฟแช็กเป็นขยะอันตราย ไม่โยนรวมขยะเผาได้/เผาไม่ได้ ตรวจคำแนะนำความปลอดภัยก่อนนำออก",
+      "details_ja": "ライターは危険ごみ。ほかのごみに混ぜない。",
+      "aliases": [
+        "ไฟแช็ก",
+        "gas lighter",
+        "Lighter",
+        "ライター",
+        "lighter"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Treat lighters as hazardous waste; do not mix with other waste. Follow city safety instructions.",
+      "model_class": "Lighter"
+    },
+    {
+      "id": "paper_cup",
+      "en": "Paper Cup",
+      "th": "แก้วกระดาษ",
+      "ja": "紙コップ",
+      "material": "Paper",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "ตรวจว่าวัสดุเป็นกระดาษจริงหรือมีชั้นเคลือบหรือส่วนอื่นประกอบ และยืนยันว่าสภาพตรงกับที่เลือกก่อนดูวิธีทิ้ง",
+      "details_ja": "材質やコーティング・付属部分を確認し、実物に合う分別方法を選んでください。",
+      "aliases": [
+        "Paper Cup",
+        "แก้วกระดาษ",
+        "紙コップ",
+        "แก้วน้ำ",
+        "แก้ว",
+        "cup",
+        "drink cup"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "questions": [
+        {
+          "id": "material",
+          "label_th": "แก้วนี้ทำจากวัสดุอะไร?",
+          "label_ja": "材質は何ですか？",
+          "label_en": "Which material is the cup?",
+          "options": [
+            {
+              "id": "paper",
+              "th": "กระดาษ",
+              "ja": "紙",
+              "en": "Paper"
+            },
+            {
+              "id": "plastic_soft",
+              "th": "พลาสติกอ่อน",
+              "ja": "軟質プラスチック",
+              "en": "Soft plastic"
+            },
+            {
+              "id": "plastic_hard",
+              "th": "พลาสติกแข็ง",
+              "ja": "硬質プラスチック",
+              "en": "Hard plastic"
+            },
+            {
+              "id": "unsure",
+              "th": "ไม่แน่ใจ",
+              "ja": "不明",
+              "en": "Not sure"
+            }
+          ]
+        }
+      ],
+      "details_en": "Confirm the material, any lining or attachments, and the actual condition before following disposal advice.",
+      "model_class": "Paper Cup",
+      "group": "cup"
+    },
+    {
+      "id": "a4_paper",
+      "en": "Paper Sheet",
+      "th": "แผ่นกระดาษ",
+      "ja": "紙（シート）",
+      "material": "Paper",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "เป็นกระดาษแผ่นทั่วไป ไม่จำกัดเพียง A4 ตรวจสภาพและช่องทางเก็บกระดาษรีไซเคิลที่รับจริงก่อนทิ้ง",
+      "details_ja": "A4に限らない紙シート。状態や地域の古紙回収条件を確認してください。",
+      "aliases": [
+        "paper sheet",
+        "white paper",
+        "กระดาษ",
+        "A4 Paper",
+        "กระดาษ A4",
+        "A4用紙",
+        "a4 paper",
+        "กระดาษแผ่น"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "General paper sheets, not only A4. Check condition and local paper recycling acceptance.",
+      "model_class": "Paper Sheet"
+    },
+    {
+      "id": "pet_plastic_bottle",
+      "en": "PET Bottle",
+      "th": "ขวด PET",
+      "ja": "ペットボトル",
+      "material": "Plastic",
+      "category": "pet",
+      "status": "validated",
+      "details_th": "ขวดเครื่องดื่ม/เครื่องปรุงที่มีสัญลักษณ์ PET เท่านั้น แยกฝาและฉลาก เทออกและล้าง ไม่บีบขวด",
+      "details_ja": "飲料・調味料用PETマーク付きのみ。ふた・ラベルを外し、すすいでつぶさずに出す。",
+      "aliases": [
+        "pet bottle",
+        "pet plastic bottle",
+        "ขวดน้ำ PET",
+        "PET Plastic Bottle",
+        "ขวดพลาสติก PET",
+        "ペットボトル",
+        "ขวดน้ำพลาสติก PET"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "For eligible PET-marked beverage or seasoning bottles: empty, remove the cap and label, rinse and keep the bottle uncrushed. Check whether your collection point accepts this type.",
+      "model_class": "PET Bottle"
+    },
+    {
+      "id": "pet_bottle_cap",
+      "en": "PET Bottle Cap",
+      "th": "ฝาขวด PET",
+      "ja": "ペットボトルのキャップ",
+      "material": "Plastic",
+      "category": "burnable",
+      "status": "validated",
+      "details_th": "ฝาพลาสติกให้แยกออกจากขวด PET และนำไปขยะเผาได้ หากเป็นโลหะต้องตรวจอีกประเภท",
+      "details_ja": "プラスチック製のふたはPETボトルから外し、燃やせるごみへ。金属製は別に確認。",
+      "aliases": [
+        "bottle cap",
+        "plastic cap",
+        "ฝาขวด",
+        "PET Bottle Cap",
+        "ฝาขวด PET",
+        "ペットボトルのふた",
+        "pet bottle cap"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Remove plastic caps from PET bottles. Metal caps need different handling. Check the actual material.",
+      "model_class": "PET Bottle Cap"
+    },
+    {
+      "id": "plastic_cup",
+      "en": "Plastic Cup",
+      "th": "แก้วพลาสติก",
+      "ja": "プラスチックカップ",
+      "material": "Plastic",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "ตรวจว่าวัสดุเป็นพลาสติกจริงหรือมีชั้นเคลือบหรือส่วนอื่นประกอบ และยืนยันว่าสภาพตรงกับที่เลือกก่อนดูวิธีทิ้ง",
+      "details_ja": "材質やコーティング・付属部分を確認し、実物に合う分別方法を選んでください。",
+      "aliases": [
+        "Plastic Cup",
+        "แก้วพลาสติก",
+        "プラスチックカップ",
+        "แก้วน้ำ",
+        "แก้ว",
+        "cup",
+        "drink cup"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "questions": [
+        {
+          "id": "material",
+          "label_th": "แก้วนี้ทำจากวัสดุอะไร?",
+          "label_ja": "材質は何ですか？",
+          "label_en": "Which material is the cup?",
+          "options": [
+            {
+              "id": "paper",
+              "th": "กระดาษ",
+              "ja": "紙",
+              "en": "Paper"
+            },
+            {
+              "id": "plastic_soft",
+              "th": "พลาสติกอ่อน",
+              "ja": "軟質プラスチック",
+              "en": "Soft plastic"
+            },
+            {
+              "id": "plastic_hard",
+              "th": "พลาสติกแข็ง",
+              "ja": "硬質プラスチック",
+              "en": "Hard plastic"
+            },
+            {
+              "id": "unsure",
+              "th": "ไม่แน่ใจ",
+              "ja": "不明",
+              "en": "Not sure"
+            }
+          ]
+        }
+      ],
+      "details_en": "Confirm the material, any lining or attachments, and the actual condition before following disposal advice.",
+      "model_class": "Plastic Cup",
+      "group": "cup"
+    },
+    {
+      "id": "plastic_food_container",
+      "en": "Plastic Food Container",
+      "th": "ภาชนะอาหารพลาสติก",
+      "ja": "プラスチック食品容器",
+      "material": "Plastic",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "ตรวจว่าเป็นพลาสติกแข็งหรืออ่อน และถาดสีขาวที่อยู่ในระบบเก็บทรัพยากรหรือไม่",
+      "details_ja": "硬質・軟質プラスチック、白色トレイかを確認。",
+      "aliases": [
+        "food container",
+        "plastic tray",
+        "กล่องข้าว",
+        "ถาดพลาสติก",
+        "Plastic Food Container",
+        "กล่องอาหารพลาสติก",
+        "プラスチック食品容器",
+        "plastic food container"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Check whether the container is rigid, soft plastic or an eligible white food tray, and whether it is clean.",
+      "model_class": "Plastic Food Container"
+    },
+    {
+      "id": "pump_bottle",
+      "en": "Pump Bottle",
+      "th": "ขวดหัวปั๊ม",
+      "ja": "ポンプ式ボトル",
+      "material": "Plastic",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "ตรวจหัวปั๊ม สปริงและตัวขวดแยกกัน อาจเป็นวัสดุหลายชนิด",
+      "details_ja": "ポンプ部の金属バネと容器本体の材質を確認。",
+      "aliases": [
+        "pump bottle",
+        "soap dispenser",
+        "ขวดสบู่",
+        "ขวดแชมพู",
+        "Pump Bottle",
+        "ขวดปั๊ม",
+        "ポンプ式ボトル"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "The body and pump may contain different materials, including a metal spring. Check and separate parts where instructed.",
+      "model_class": "Pump Bottle"
+    },
+    {
+      "id": "snack_wrapper",
+      "en": "Snack Wrapper",
+      "th": "ซองขนม",
+      "ja": "菓子の包装袋",
+      "material": "Plastic",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "ซองพลาสติกอ่อน/ฟิล์มมักเป็นขยะเผาได้ ถ้ามีวัสดุอื่นประกอบต้องตรวจเพิ่ม",
+      "details_ja": "軟質のフィルム包装は燃やせるごみが基本。複合素材は確認。",
+      "aliases": [
+        "wrapper",
+        "food wrapper",
+        "ซองพลาสติก",
+        "ซองขนม",
+        "Snack Wrapper",
+        "お菓子の包装",
+        "snack wrapper"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Soft plastic film wrappers are generally treated differently from rigid or mixed-material packaging. Verify the materials.",
+      "model_class": "Snack Wrapper"
+    },
+    {
+      "id": "spray_can",
+      "en": "Spray Can",
+      "th": "กระป๋องสเปรย์",
+      "ja": "スプレー缶",
+      "material": "Metal",
+      "category": "hazardous",
+      "status": "validated",
+      "details_th": "ขยะอันตราย ใช้ให้หมดเท่าที่ทำได้ ระบุว่ามีของเหลือถ้ามี ห้ามเจาะกระป๋อง",
+      "details_ja": "危険ごみ。使い切り、残存する場合は明記。穴を開けない。",
+      "aliases": [
+        "aerosol can",
+        "กระป๋องแก๊ส",
+        "สเปรย์",
+        "Spray Can",
+        "กระป๋องสเปรย์",
+        "スプレー缶",
+        "spray can"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Hazardous waste: use up contents where safe, disclose any remaining contents, and never puncture the can.",
+      "model_class": "Spray Can"
+    },
+    {
+      "id": "plastic_squeeze_tube",
+      "en": "Squeeze Tube",
+      "th": "หลอดบีบ",
+      "ja": "チューブ容器",
+      "material": "Plastic",
+      "category": "burnable",
+      "status": "conditional",
+      "details_th": "ตรวจว่าเป็นหลอดพลาสติกอ่อนหรือมีชิ้นส่วนแข็ง/โลหะ ต้องแยกตามวัสดุ",
+      "details_ja": "柔らかいプラスチックか硬質・金属部品があるかを確認。",
+      "aliases": [
+        "squeeze tube",
+        "หลอดบีบ",
+        "Plastic Squeeze Tube",
+        "หลอดบีบพลาสติก",
+        "チューブ容器",
+        "plastic squeeze tube"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Confirm whether this is soft plastic or has rigid or metal parts. Separate different materials when required.",
+      "model_class": "Squeeze Tube"
+    },
+    {
+      "id": "plastic_straw",
+      "en": "Straw",
+      "th": "หลอดดูด",
+      "ja": "ストロー",
+      "material": "Mixed",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "หลอดดูดอาจเป็นพลาสติก กระดาษ หรือวัสดุอื่น ตรวจวัสดุก่อนเลือกวิธีทิ้ง",
+      "details_ja": "ストローはプラスチック・紙などの素材があるため、材質を確認してください。",
+      "aliases": [
+        "straw",
+        "หลอดดูด",
+        "Plastic Straw",
+        "หลอดดูดพลาสติก",
+        "プラスチックストロー",
+        "plastic straw",
+        "หลอด"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Straws may be plastic, paper or another material. Check the material first.",
+      "model_class": "Straw"
+    },
+    {
+      "id": "toothbrush",
+      "en": "Toothbrush",
+      "th": "แปรงสีฟัน",
+      "ja": "歯ブラシ",
+      "material": "Plastic",
+      "category": "review",
+      "status": "conditional",
+      "details_th": "แปรงสีฟันมักมีวัสดุหลายชนิด ตรวจรายการในคู่มือเมืองก่อนทิ้ง",
+      "details_ja": "複合素材のため、市の分別表で確認。",
+      "aliases": [
+        "tooth brush",
+        "แปรง",
+        "Toothbrush",
+        "แปรงสีฟัน",
+        "歯ブラシ",
+        "toothbrush"
+      ],
+      "source": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/71884.pdf",
+      "details_en": "Toothbrushes can contain several materials. Confirm the relevant local sorting guidance.",
+      "model_class": "Toothbrush"
+    }
+  ],
+  "model_classes": [
+    "Battery",
+    "Beverage Can",
+    "Beverage Carton",
+    "Can Lid",
+    "Cardboard Box",
+    "Cutlery",
+    "Egg Carton",
+    "Foam Food Container",
+    "Food Can",
+    "Glass Beverage Bottle",
+    "Kraft Paper Envelope",
+    "Light Bulb",
+    "Lighter",
+    "Paper Cup",
+    "Paper Sheet",
+    "PET Bottle",
+    "PET Bottle Cap",
+    "Plastic Cup",
+    "Plastic Food Container",
+    "Pump Bottle",
+    "Snack Wrapper",
+    "Spray Can",
+    "Squeeze Tube",
+    "Straw",
+    "Toothbrush"
+  ],
+  "model_class_to_item_id": {
+    "Battery": "battery",
+    "Beverage Can": "aluminum_can",
+    "Beverage Carton": "beverage_carton",
+    "Can Lid": "can_lid",
+    "Cardboard Box": "cardboard_box",
+    "Cutlery": "plastic_cutlery",
+    "Egg Carton": "egg_carton",
+    "Foam Food Container": "foam_waste",
+    "Food Can": "food_can",
+    "Glass Beverage Bottle": "glass_bottle",
+    "Kraft Paper Envelope": "kraft_paper_envelope",
+    "Light Bulb": "light_bulb",
+    "Lighter": "lighter",
+    "Paper Cup": "paper_cup",
+    "Paper Sheet": "a4_paper",
+    "PET Bottle": "pet_plastic_bottle",
+    "PET Bottle Cap": "pet_bottle_cap",
+    "Plastic Cup": "plastic_cup",
+    "Plastic Food Container": "plastic_food_container",
+    "Pump Bottle": "pump_bottle",
+    "Snack Wrapper": "snack_wrapper",
+    "Spray Can": "spray_can",
+    "Squeeze Tube": "plastic_squeeze_tube",
+    "Straw": "plastic_straw",
+    "Toothbrush": "toothbrush"
+  },
+  "model_grouping": {
+    "cup": {
+      "label_th": "แก้วน้ำ (เลือกวัสดุ)",
+      "label_ja": "コップ（材質を確認）",
+      "label_en": "Cups (confirm material)",
+      "model_classes": [
+        "Paper Cup",
+        "Plastic Cup"
+      ]
+    }
+  }
+}
